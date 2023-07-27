@@ -1,0 +1,52 @@
+/* Style były dodatkowo -> wygodniej się czyta coś, co ładnie wygląda :D */
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+	margin: 0;
+}
+
+h2 {
+    margin-top: 0px;
+}
+h3 {
+	margin: 0;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.mainBody {
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 1rem;
+    padding: 1rem;
+    width: 90%;
+    margin: 2rem auto;
+}
+.space{
+	margin-bottom: 1rem;
+}
+
+.loading {
+	animation: spin 3s infinite;
+	animation-timing-function: linear;
+}
+@keyframes spin {
+	0%{
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

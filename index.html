@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie rekrutacyjne</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- basicLightbox wtyczka -> CSS -->
+    <link rel="stylesheet" href="./basicLightbox.min.css"/>
+</head>
+
+<body>
+    <div class="mainBody">
+        <h2>Zadanie #1</h2>
+        <i>Rozwiązanie zadania #1 znajduję się w konsoli -> wywołane metody append('^'), prepend('^') oraz pad('=')</i>
+        <!-- nieistotny -> tworzy przerwę między zadaniami -->
+        <div class="space"></div>
+
+        <h2>Zadanie #2</h2>
+        <div id="controls">
+            <input type="number" min="0" max="100" step="1" id="js-input" />
+            <button type="button" onclick="createClicked()" id="createBtn">Utwórz</button>
+            <button type="button" onclick="destroyBoxes()" id="destroyBtn">Usuń</button>
+        </div>
+
+        <div id="boxes">
+
+        </div>
+
+        <!-- nieistotny -> tworzy przerwę między zadaniami -->
+        <div class="space"></div>
+
+        <h2>Zadanie #3</h2>
+
+
+        <form id="search-form" onsubmit="SubmitForm(event)">
+            <input type="text" name="query" id="query" autocomplete="off" placeholder="Search images..." />
+
+        </form>
+
+        <ul id="gallery">
+
+        </ul>
+
+        <!-- za każdym razem jak zobaczę ten div wywoła się funkcja pobierająca nowe zdjęcia -->
+        <div id="loadingComp" style="display: flex; margin-top: 1rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon loading icon-tabler icon-tabler-loader" width="24"
+                height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 6l0 -3"></path>
+                <path d="M16.25 7.75l2.15 -2.15"></path>
+                <path d="M18 12l3 0"></path>
+                <path d="M16.25 16.25l2.15 2.15"></path>
+                <path d="M12 18l0 3"></path>
+                <path d="M7.75 16.25l-2.15 2.15"></path>
+                <path d="M6 12l-3 0"></path>
+                <path d="M7.75 7.75l-2.15 -2.15"></path>
+            </svg>
+            <h3>
+                LOADING... </h3>
+        </div>
+    </div>
+
+    <!-- basicLightbox wtyczka -> JS -->
+    <script src="./basicLightbox.min.js"></script>
+    <!-- Połączenie html z osobnym plikiem JS -> dbanie o czystość i przejrzystość kodu -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
